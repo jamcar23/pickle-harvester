@@ -70,12 +70,17 @@ contract Harvester is OwnableUpgradeable {
     function harvest(
         uint256 _fromId, 
         uint256 _toId, 
-        address _to
+        address _to,
+        bytes memory _harvestTx
     ) public {
         uint256 _fromBal = chef.pendingPickle(_fromId, msg.sender);
         require(_fromBal > 0, "No pickles to harvest.");
 
-        chef.harvest(_fromId, address(this));
+        // this won't work because harvest will use the
+        // balance of msg.sender which will be the contract
+        // chef.harvest(_fromId, address(this));
+
+        Address.functionCall(address(chef), _harvestTx);
 
         IJar _jar = IJar(_to);
         address _want = _jar.token();
