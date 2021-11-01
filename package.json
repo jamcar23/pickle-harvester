@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/jamcar23/pickle-harvester/issues"
   },
-  "homepage": "https://github.com/jamcar23/pickle-harvester#readme"
+  "homepage": "https://github.com/jamcar23/pickle-harvester#readme",
+  "devDependencies": {
+    "hardhat": "^2.6.7"
+  }
 }
