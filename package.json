@@ -1,0 +1,20 @@
+{
+  "name": "pickle-harvester",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jamcar23/pickle-harvester.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jamcar23/pickle-harvester/issues"
+  },
+  "homepage": "https://github.com/jamcar23/pickle-harvester#readme"
+}
